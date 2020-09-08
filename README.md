@@ -116,3 +116,28 @@ nano ~/.config/terminator/config
       uuid = 14f98214-6f01-4fb8-9d13-265a756ef2e8
 ```
 If we want to change this layout create a new layout and save it after that copy that new custom code and replace it with default content.
+
+## install pyenv
+pyenv lets you easily switch between multiple versions of Python. Before install pyenv we need to install some [prerequisite](https://github.com/pyenv/pyenv/wiki/Common-build-problems) which are given bellow 
+
+```
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+```
+after that we are going to install pyenv using [pyenv installer](https://github.com/pyenv/pyenv-installer) using following line of command
+
+```
+$ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
+after that we need to update `.bashrc` file we can access that using `nano ~/.bashrc` command and inside the file, add following command at the bottom .
+
+```console
+# Load pyenv automatically by adding
+# the following to ~/.bashrc:
+
+export PATH="/home/mones/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+after that to check the effect restart the console using `$ exec $SHELL` command.
