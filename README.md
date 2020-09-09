@@ -141,3 +141,23 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 after that to check the effect restart the console using `$ exec $SHELL` command.
+
+## install virtualenv
+[virtualenv](https://virtualenv.pypa.io/en/latest/) is a tool to create isolated Python environments. To install this use following command 
+```
+sudo apt install virtualenv
+```
+
+
+## Update Visual Code studio watch limit 
+ Some time VS Code file watcher is running out of handles because the workspace is large. we can solve this problem using this [guide](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
+
+
+## Ngrok 
+ngrok is a cross-platform application that enables developers to expose a local development server to the Internet with minimal effort. The software makes your locally-hosted web server appear to be hosted on a subdomain of ngrok.com, meaning that no public IP or domain name on the local machine is needed.
+
+For installation just follow their [guideline](https://dashboard.ngrok.com/get-started/setup)
+
+
+## Docker
+follow this [link](https://medium.com/devgorilla/how-to-install-docker-on-ubuntu-18-04-495216a16092) to install docker however if `Executing the Docker Command Without Sudo` does not work check [this](https://docs.docker.com/engine/install/linux-postinstall/) and if we got issues like `Got permission denied while trying to connect to the Docker daemon socket` follow this [instruction](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket) command like `$ sudo chmod 666 /var/run/docker.sock` solve the problem
