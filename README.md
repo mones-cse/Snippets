@@ -14,6 +14,7 @@ $ sudo apt install snapd
 most of the commands are self-explanatory 
 
 ```console
+$ sudo snap install pycharm-professional --classic
 $ sudo snap install webstorm --classic
 $ sudo snap install datagrip --classic
 $ sudo snap install code --classic
@@ -116,6 +117,15 @@ nano ~/.config/terminator/config
       uuid = 14f98214-6f01-4fb8-9d13-265a756ef2e8
 ```
 If we want to change this layout create a new layout and save it after that copy that new custom code and replace it with default content.
+
+## install nvm
+```console
+$ apt-get update -y
+$ apt-get install build-essential libssl-dev -y
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+$ source ~/.profile
+$ nvm --version
+```
 
 ## install pyenv
 pyenv lets you easily switch between multiple versions of Python. Before install pyenv we need to install some [prerequisite](https://github.com/pyenv/pyenv/wiki/Common-build-problems) which are given bellow 
